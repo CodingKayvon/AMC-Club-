@@ -1,0 +1,182 @@
+.header-section {
+  margin: 0;
+  height: 60px;
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 200;
+}
+
+.left-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.img{
+  position: relative;
+  left: 45px;
+  top: 0;
+  background-color: transparent;
+  border-color: var(--theme6);
+  border-style: dashed;
+  border-width: 1px;
+  transform: rotate(45deg);
+  height: 40px;
+  width: 40px;
+}
+
+.club-name {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.cn1{
+  color: var(--theme1);
+}
+
+.cn2{
+  color: var(--theme2);
+}
+
+.cn3{
+  color: var(--theme3)
+}
+nav {
+  position: relative;
+  height: 60px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--theme7);
+  padding-left: 0;
+  padding-right: 50px;
+  border-bottom: solid;
+  border-bottom-color: var(--theme6);
+  border-bottom-width: 1px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme6);
+}
+
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.middle-section li {
+  transition: 0.6s ease;
+}
+
+.middle-section li:hover {
+  transform: scale(1.3);
+  transition: 0.4s ease;
+}
+
+.middle-section a {
+  font-size: 1.4rem;
+  transition: 0.4s ease;
+}
+
+.middle-section a:hover {
+  color: var(--theme2);
+  transition: 0.4s ease;
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  height: auto;
+  width: auto;
+}
+
+.register-btn {
+  background-color: var(--theme7);
+  font-size: 1.3rem;
+  height: 40px;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--theme6);
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: solid;
+  border-width: 1px;
+  box-shadow: -5px -5px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.register-btn:hover {
+  background-color: #111111;
+  color: var(--theme1);
+  transition: 0.4s ease;
+}
+
+.btn-cover-left {
+  position: relative;
+  right: 75px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--theme7);
+}
+
+.btn-cover-right {
+  position: relative;
+  right: 23px;
+  top: 30px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--theme7);
+}
+
+@media (max-width: 600px){
+
+    nav {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .img {
+      left: 10px;
+    }
+  
+    .club-name {
+      position: absolute;
+      left: 15px;
+    }
+  
+    .middle-section{
+      margin-right: 35px;
+    }
+  
+    .register-btn {
+      width: 75px;
+      font-size: 1.3rem;
+    }
+  }

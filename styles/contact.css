@@ -1,0 +1,96 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme5);
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.contact-title {
+  margin-top: 50px;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--theme4);
+}
+
+.divider-small-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-small {
+  background-color: var(--theme6);
+  margin-top: 10px;
+  height: 1px;
+  width: 5%;
+}
+
+.contact-logos-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 75px;
+}
+
+.contact-logos-wrapper a {
+  color: #ffffff94;
+  font-size: 3rem;
+}
+
+.twitter-logo,
+.insta-logo,
+.github-logo,
+.discord-logo,
+.mail-logo {
+  transition: 0.4s ease;
+} 
+
+.twitter-logo:hover,
+.insta-logo:hover,
+.github-logo:hover,
+.discord-logo:hover,
+.mail-logo:hover {
+  color: var(--theme6);
+  transform: scale(1.3);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff94;
+}
+
+.contact-info {
+  margin-top: 70px;
+}
+
+.copyright {
+  margin-top: 45px;
+}
+
+@media (max-width: 600px){
+    .contact-title {
+      display: inline-block;
+      flex-direction: row;
+      font-size: 2rem;
+    }
+  
+    .contact-wrapper {
+      margin: 0;
+    }
+  
+  }
